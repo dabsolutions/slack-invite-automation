@@ -24,7 +24,7 @@ html
               input(type="submit", value="Join").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
-              .text-center
+              .login-container
                 h3 Already a member?
                 a(class="btn btn-outline-light btn-lg login", href='https://dabsolutions.slack.com') Log in Here
     if !!recaptchaSiteKey

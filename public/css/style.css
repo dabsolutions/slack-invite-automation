@@ -3,12 +3,18 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
 
 
-.text-center {
+@media (min-width: 576px) {
+  .login-container {
+    margin: 1rem;
+  }
+}
+
+.login-container {
   text-align: center;
 }
 
 .login {
-  margin-top: 1rem;
+  margin: 1rem;
   color: white !important;
   font-size: 1.5rem;
 }
@@ -53,7 +59,7 @@ html,body{
 }
 
 .header{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 
@@ -89,12 +95,6 @@ h2 strong{
 .information{
   width: 480px;
   margin: 0 auto;
-}
-
-@media (min-width: 576px) {
-  .information{
-    padding-top: 35px;
-  }
 }
 
 h3{
@@ -201,7 +201,6 @@ a:hover {
 
 .logo-container {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -237,13 +236,6 @@ a:hover {
   cursor: pointer;
 }
 
-.btn {
-  border-radius: 300px;
-  font-family: Lato,Helvetica,Arial,sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
 .mb-3, .my-3 {
   margin-bottom: 1rem!important;
 }
@@ -253,6 +245,13 @@ a:hover {
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: .3rem;
+}
+
+.btn {
+  border-radius: 300px;
+  font-family: Lato,Helvetica,Arial,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .btn-outline-light {
