@@ -114,7 +114,7 @@ h3{
 }
 
 .field{
-  background: url(../images/field.png) repeat;
+  background: rgba(255, 255, 255, 0.25);
   width: 448px;
   -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
   border: none;
@@ -184,16 +184,15 @@ a:hover {
   margin: auto;
 }
 
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
 @media (min-width: 576px) {
   .logo-container {
     margin-bottom: 2rem;
   }
-}
-
-.logo-container {
-  text-align: center;
-  margin-bottom: 1rem;
 }
 
 .logo {
