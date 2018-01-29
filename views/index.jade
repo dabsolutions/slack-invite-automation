@@ -28,6 +28,8 @@ html
     #wrapper
       .main
         .header
+          .logo-container
+            img(class="logo" src="/images/logo_clear.png")
           h1
             strong #{community}
           h2 #{__('HEADER', community)}
@@ -40,9 +42,9 @@ html
               input(type="submit", value="Join").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
-              .text-center
+              .login-container
                 h3 Already a member?
-                a(class="login", href='https://dabsolutions.slack.com') Log in Here
+                a(class="btn btn-outline-light btn-lg login", href='https://dabsolutions.slack.com') Log in Here
     if !!recaptchaSiteKey
        script(src='https://www.google.com/recaptcha/api.js')
     script.
